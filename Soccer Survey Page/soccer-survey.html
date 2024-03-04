@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Soccer Survey Form</title>
+    <meta charset= "UTF-8">
+    <meta content="device-width, initial scale=1.0" name= "viewport">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title" name="title">Soccer Survey Form </h1>
+   <p id="description" name="description">Thank you for taking the time to fill out this Soccer Survey </p>
+  <div class="survey">
+    <form id="survey-form" name="survey-form">
+      <label for= "name" id="name-label" name="name-label">Name <input type="text" id="name" name="name" placeholder="Please enter your name" required /> </label>
+    
+    <label for="email" id="email-label" name="email-label">Email<input type="email" id="email" name="email" placeholder="Please enter your email" required/></label>
+
+    <label for="number" id="number-label" name="age-label">Age (optional)<input type="number" id="number" name="age" min= "13" max= "120" placeholder="Age"/></label>
+    <label for="dropdown"> What position do you play on the field?
+    <select id="dropdown" name="dropdown">
+      <option value="forward">Forward</option>
+      <option value="midfielder">Midfielder</option>
+      <option value="defender">Defender</option>
+      <option value="goalkeeper">Goalkeeper</option>
+    </select>
+    </label>
+    <fieldset>
+      <legend>How often do you play soccer?</legend>
+      <label for="daily"><input type="radio" id="daily" value="daily" name="frequency" checked class="inline"/> Daily</label>
+      <label for="weekly"><input type="radio" value="weekly" id="weekly" name="frequency" class="inline"> Weekly</label>
+      
+      <label><input type="radio" id="monthly" value="monthly" name="frequency" class="inline"/> Monthly</label>
+      
+      <label><input type="radio"id="never" value="never" name="frequency" class="inline"> Never</label>
+</fieldset>
+
+<fieldset>
+<legend>Which soccer leagues do you enjoy watching? (Check all that apply)</legend>
+<label for="premierleague"><input type="checkbox" id="premierleague" value="premierleague" name="league"class="inline" /> Premier League </label>
+<label for="bundesliga"><input type="checkbox" id="bundesliga" value="bundesliga" name="league"class="inline"/> Bundesliga</label>
+
+<label for="mls"><input type="checkbox" id="mls" value="mls" name="league"class="inline"/> MLS</label>
+
+<label for="ligamx"><input type="checkbox" id="ligamx" value="ligamx" name="league"class="inline"/> Liga MX</label>
+
+<label="laliga"><input type="checkbox" id="laliga" value="laliga" name="league"class="inline"/> La Liga</label>
+
+</fieldset>
+
+<fieldset>
+  <label for="comment">Why do you enjoy soccer?<textarea id="comment" name="comment" rows="5" cols="30" placeholder="I enjoy soccer because..."/></textarea>
+  </label>
+</fieldset>
+    <label for="submit"><input type="submit" id="submit" name="Submit"/></label>
+
+
+  </form>
+</div>
+  </body>
+
+</html>
